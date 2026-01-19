@@ -1,0 +1,4 @@
+features.txt
+src\__pycache__
+models
+.venv
