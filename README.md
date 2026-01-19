@@ -18,7 +18,8 @@ requirements.txt        # specifies the dependencies
 
 ## Setup
 ```bash
-
+git clone https://github.com/the-flying-cow/Email-Spam-classification.git
+cd Email-Spam-classification
 ```
 
 Create a virtual environment:
