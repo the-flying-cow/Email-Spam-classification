@@ -36,8 +36,6 @@ def main():
     log_path= os.path.join(model_dir, "log_model.pkl")
     joblib.dump(log_model, log_path)
     print("Log Model saved")
-
-    return log_model
-
+    
 if __name__=='__main__':
     main()
