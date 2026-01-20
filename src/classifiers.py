@@ -14,5 +14,5 @@ def train_svm(x_train: pd.DataFrame, y_train: pd.DataFrame) -> TunedThresholdCla
 
 def train_log(x_train: pd.DataFrame, y_train: pd.DataFrame) -> TunedThresholdClassifierCV:
     model= Pipeline(steps=[("tfidf", tfidf), ("log_classifier", LogisticRegression(C= 0.90, solver= 'saga', penalty= 'l1', dual= False, random_state= 7, n_jobs= -1, max_iter= 3000))])
-    tuned_log= TunedThresholdClassifierCV(estimator= model, scoring= 'f1',cv= 3, random_state= 7).fit(x_train, y_train)
+    tuned_log= TunedThresholdClassifierCV(estimator= model, scoring= 'precision',cv= 3, random_state= 7).fit(x_train, y_train)
     return tuned_log
