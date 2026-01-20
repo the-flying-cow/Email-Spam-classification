@@ -37,5 +37,6 @@ pip install -r requirements.txt
 Inside the src folder, run the following
 
 ```bash
-gradio gradio_ui.py
+python main.py # initial training and saving of model
+gradio gradio_ui.py # running model in gradio
 ```
