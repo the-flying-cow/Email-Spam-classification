@@ -26,6 +26,7 @@ Create a virtual environment:
 ```bash
 python -m venv .venv
 venv\Scripts\activate
+```
 
 ## Run the project
 In your terminal/command prompt, navigate to the root folder and execute the following 
