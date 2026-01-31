@@ -7,7 +7,6 @@ from load_data import get_data
 from preprocessing import preprocess
 from classifiers import train_svm, train_log
 from sklearn.metrics import precision_score, recall_score, f1_score, confusion_matrix
-import re
 import time
 from build_logger import get_logger
 
