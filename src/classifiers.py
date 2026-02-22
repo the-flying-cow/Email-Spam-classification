@@ -56,7 +56,7 @@ def train_svm(x_train: pd.DataFrame, y_train: pd.Series) -> TunedThresholdClassi
         logger.info('ThresholdTuner Hyperparameters')
         threshold_tuning_config= {
             "estimator": model,
-            "scoring": 'f1', # using f1 as scoring
+            "scoring": 'precision', 
             "cv": 3,
             "random_state": 7
             }
@@ -89,7 +89,7 @@ def train_log(x_train: pd.DataFrame, y_train: pd.Series) -> TunedThresholdClassi
         logger.info('ThresholdTuner Hyperparameters')
         threshold_tuning_config= {
             "estimator": model,
-            "scoring": 'precision', # using precision as scoring
+            "scoring": 'precision', 
             "cv": 3,
             "random_state": 7
             }
